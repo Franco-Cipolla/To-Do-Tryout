@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #272d2d;
+  --color-white: #edf5fc;
+  --color-rose: #a39ba8;
+  --font-Inter: "Inter", sans-serif;
+}
+@layer components {
+  input[type="checkbox"] {
+    @apply appearance-none p-2  w-5 h-5 rounded-full border-1 border-gray-200 cursor-pointer flex items-center justify-center;
+  }
+
+  input[type="checkbox"]:checked::after {
+    content: "✔";
+    @apply text-blue-400 text-sm font-bold;
+    display: block;
+    text-align: center;
+    line-height: 1.25rem; /* Zentriert den Haken */
+  }
+  .animate-scale {
+    animation: pulse-scale 0.6s ease-in-out;
+  }
+
+  
+}
+@keyframes pulse-scale {
+  0%,
+  100% {
+    transform: scale(1); /* Normal size */
+  }
+  50% {
+    transform: scale(1.1); /* Larger size */
+  }
+  70% {
+    transform: scale(0.9); /* Slightly smaller size */
+  }
+}
+
