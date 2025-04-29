@@ -16,26 +16,32 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-white text-gray-950 font-Inter flex flex-col min-h-screen items-center justify-center ">
-
+  <body
+    class="bg-white text-gray-950 font-Inter flex flex-col min-h-screen items-center justify-center"
+  >
     <main class="flex flex-col bg-[#fff] rounded-md shadow-2xl p-6">
-      <h1 class="text-2xl font-semibold mb-4 ">To-Do List</h1>
+      <h1 class="text-2xl font-semibold mb-4">To-Do List</h1>
       <form action="">
-        <div class="mb-4" >
-
+        <div class="mb-4">
           <input
             type="text"
             name="task"
             id="task"
-            class="outline-1 outline-[#b8c5d6]/70 indent-2 mr-1 p-1  rounded placeholder:text-sm  placeholder:opacity-95"
+            class="outline-1 outline-[#b8c5d6]/70 indent-2 mr-1 p-1 rounded placeholder:text-sm placeholder:opacity-95"
             placeholder="Add a new task"
           />
-          <button class="px-4 py-1  text-[#fff] font-light hover:bg-gray-500 active:bg-blue-400 bg-gray-600  transition-colors  ease-in-out duration-250 rounded " id="addButton">
+          <button
+            class="px-4 py-1 text-[#fff] font-light hover:bg-gray-500 active:bg-blue-400 bg-gray-600 transition-colors ease-in-out duration-250 rounded"
+            id="addButton"
+          >
             Add
           </button>
         </div>
       </form>
-      <div id="container" class="flex flex-col gap-4 items-center border-1 border-gray-200 rounded p-3"></div>
+      <div
+        id="container"
+        class="flex flex-col gap-4 items-center border-1 border-gray-200 rounded p-3"
+      ></div>
     </main>
     <script src="index.js"></script>
   </body>

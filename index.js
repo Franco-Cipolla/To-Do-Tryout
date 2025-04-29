@@ -41,9 +41,6 @@ addBtn.addEventListener("click",(e) =>{
         newDiv.remove();
     });
 
-
-
-
 }
 })
 
