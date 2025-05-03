@@ -17,31 +17,50 @@
     />
   </head>
   <body
-    class="bg-white text-gray-950 font-Inter flex flex-col min-h-screen items-center justify-center"
+    class="bg-white text-gray-950 font-Inter flex flex-col min-h-screen items-center"
   >
-    <main class="flex flex-col bg-[#fff] rounded-md shadow-2xl p-6">
-      <h1 class="text-2xl font-semibold mb-4">To-Do List</h1>
-      <form action="">
-        <div class="mb-4">
-          <input
-            type="text"
-            name="task"
-            id="task"
-            class="outline-1 outline-[#b8c5d6]/70 indent-2 mr-1 p-1 rounded placeholder:text-sm placeholder:opacity-95"
-            placeholder="Add a new task"
-          />
-          <button
-            class="px-4 py-1 text-[#fff] font-light hover:bg-gray-500 active:bg-blue-400 bg-gray-600 transition-colors ease-in-out duration-250 rounded"
-            id="addButton"
-          >
-            Add
-          </button>
-        </div>
-      </form>
+    <header class="w-full flex md:hidden p-6 justify-end">
+      <div class="flex w-full justify-end" id="menuButton">
+        <i class="fa-solid fa-bars cursor-pointer text-2xl" id="logo"></i>
+      </div>
       <div
-        id="container"
-        class="flex flex-col gap-4 items-center border-1 border-gray-200 rounded p-3"
-      ></div>
+        class="items-center flex-col hidden bg-gray-200 p-10 rounded-lg"
+        id="menu"
+      >
+        <ul class="flex gap-8 flex-col font-semibold">
+          <li><a href="#">Account</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Tasks</a></li>
+        </ul>
+      </div>
+    </header>
+    <main
+      class="items-center justify-center flex flex-col min-w-full min-h-full mt-80"
+    >
+      <div class="flex flex-col bg-[#fff] p rounded-md shadow-2xl p-6">
+        <h1 class="text-2xl font-semibold mb-4">To-Do List</h1>
+        <form action="">
+          <div class="mb-4">
+            <input
+              type="text"
+              name="task"
+              id="task"
+              class="outline-1 outline-[#b8c5d6]/70 indent-2 mr-1 p-1 rounded placeholder:text-sm placeholder:opacity-95"
+              placeholder="Add a new task"
+            />
+            <button
+              class="px-4 py-1 text-[#fff] font-light hover:bg-gray-500 active:bg-blue-400 bg-gray-600 transition-colors ease-in-out duration-250 rounded"
+              id="addButton"
+            >
+              Add
+            </button>
+          </div>
+        </form>
+        <div
+          id="container"
+          class="flex flex-col gap-4 items-center border-1 border-gray-200 rounded p-3"
+        ></div>
+      </div>
     </main>
     <script src="index.js"></script>
   </body>

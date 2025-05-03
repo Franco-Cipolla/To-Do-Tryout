@@ -1,7 +1,10 @@
 const container = document.querySelector("#container");
 const input = document.querySelector("#task");
 const addBtn = document.querySelector("#addButton");
-
+const menu = document.querySelector("#menu");
+const menuBtn = document.querySelector("#menuButton");
+const returnBtn = document.querySelector("#returnButton");
+const burgerBtn = document.querySelector("#logo");
 let newButton = document.createElement("button");
 let newDiv = document.createElement("div");
 
@@ -45,3 +48,13 @@ addBtn.addEventListener("click",(e) =>{
 })
 
 
+menuBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    menu.classList.toggle("hidden")
+    menu.classList.toggle("ml-3")
+    menuBtn.classList.toggle("transition-all")
+    menuBtn.classList.toggle("duration-300")
+    burgerBtn.classList.toggle("fa-bars");
+    burgerBtn.classList.toggle("fa-xmark");
+
+})
