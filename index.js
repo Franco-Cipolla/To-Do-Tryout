@@ -29,7 +29,7 @@ addBtn.addEventListener("click",(e) =>{
     newDiv.classList.add("border-b-1", "border-gray-200", "w-full", "flex", "p-2", "justify-between");
     newCheck.classList.add("cursor-pointer")
     textGroup.classList.add("flex", "gap-3", "items-center")
-    newButton.classList.add("text-gray-400", "font-light", "hover:text-blue-400", "cursor-pointer", "transition", "duration-200", "ease-in-out", "hover:underline", "underline-offset-4");
+    newButton.classList.add("text-gray-400", "font-light", "hover:text-blue-400", "cursor-pointer", "transition", "duration-150", "ease-in-out", "hover:underline", "underline-offset-4");
 
     newDiv.append(textGroup);
     newDiv.append(newButton);
@@ -56,5 +56,6 @@ menuBtn.addEventListener("click", (e) => {
     menuBtn.classList.toggle("duration-300")
     burgerBtn.classList.toggle("fa-bars");
     burgerBtn.classList.toggle("fa-xmark");
+
 
 })

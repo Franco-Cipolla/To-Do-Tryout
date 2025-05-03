@@ -21,10 +21,13 @@
   >
     <header class="w-full flex md:hidden p-6 justify-end">
       <div class="flex w-full justify-end" id="menuButton">
-        <i class="fa-solid fa-bars cursor-pointer text-2xl" id="logo"></i>
+        <i
+          class="fa-solid fa-bars cursor-pointer text-2xl transition-all"
+          id="logo"
+        ></i>
       </div>
       <div
-        class="items-center flex-col hidden bg-gray-200 p-10 rounded-lg"
+        class="items-center flex-col hidden shadow-lg bg-[#fff] p-10 rounded-lg"
         id="menu"
       >
         <ul class="flex gap-8 flex-col font-semibold">
@@ -49,7 +52,7 @@
               placeholder="Add a new task"
             />
             <button
-              class="px-4 py-1 text-[#fff] font-light hover:bg-gray-500 active:bg-blue-400 bg-gray-600 transition-colors ease-in-out duration-250 rounded"
+              class="px-4 py-1 text-[#fff] font-light hover:bg-gray-500 active:bg-blue-400 bg-gray-600 transition-colors ease-in-out duration-150 rounded"
               id="addButton"
             >
               Add
