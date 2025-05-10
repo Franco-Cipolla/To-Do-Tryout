@@ -44,13 +44,17 @@
         <h1 class="text-2xl font-semibold mb-4">To-Do List</h1>
         <form action="">
           <div class="mb-4">
-            <input
-              type="text"
-              name="task"
-              id="task"
-              class="outline-1 outline-[#b8c5d6]/70 indent-2 mr-1 p-1 rounded placeholder:text-sm placeholder:opacity-95"
-              placeholder="Add a new task"
-            />
+            <div class="relative inline-block">
+              <input
+                type="text"
+                name="task"
+                id="task"
+                class="outline-1 outline-[#b8c5d6]/70 indent-2 mr-1 p-1 rounded placeholder:text-sm placeholder:opacity-95"
+                placeholder="Add a new task"
+              /><i
+                class="fa-solid fa-magnifying-glass absolute right-3 top-2 text-gray-500/40 text-lg"
+              ></i>
+            </div>
             <button
               class="px-4 py-1 text-[#fff] font-light hover:bg-gray-500 active:bg-blue-400 bg-gray-600 transition-colors ease-in-out duration-150 rounded"
               id="addButton"
@@ -61,7 +65,7 @@
         </form>
         <div
           id="container"
-          class="flex flex-col gap-4 items-center border-1 border-gray-200 rounded p-3"
+          class="hidden flex-col gap-4 items-center border-1 border-gray-200 rounded p-3"
         ></div>
       </div>
     </main>

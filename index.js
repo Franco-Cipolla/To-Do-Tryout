@@ -11,6 +11,7 @@ let newDiv = document.createElement("div");
 
 addBtn.addEventListener("click",(e) =>{
     e.preventDefault();
+    container.classList.replace("hidden","flex");
 
     addBtn.classList.add("animate-scale")
     setTimeout(() => {
@@ -28,6 +29,7 @@ addBtn.addEventListener("click",(e) =>{
     newH2.classList.add("inline-block");
     newDiv.classList.add("border-b-1", "border-gray-200", "w-full", "flex", "p-2", "justify-between");
     newCheck.classList.add("cursor-pointer")
+
     textGroup.classList.add("flex", "gap-3", "items-center")
     newButton.classList.add("text-gray-400", "font-light", "hover:text-blue-400", "cursor-pointer", "transition", "duration-150", "ease-in-out", "hover:underline", "underline-offset-4");
 
